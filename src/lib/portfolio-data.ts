@@ -23,7 +23,7 @@ export const profile = {
     pt: 'Desenvolvedor Full-stack & DevOps',
     en: 'Full-Stack Developer & DevOps',
   } satisfies Bilingual,
-  handle: '@seu-usuario',
+  handle: '@Luw17',
   location: {
     pt: 'Brasil — Remoto',
     en: 'Brazil — Remote',
@@ -74,26 +74,37 @@ export type Experience = {
   company: string
   period: Bilingual
   description: Bilingual
+  highlights?: Bilingual[]
+  stack?: string[]
 }
 
 export const experiences: Experience[] = [
   {
-    role: { pt: 'Desenvolvedor Back-end', en: 'Back-end Developer' },
-    company: 'Empresa / Freelance',
-    period: { pt: '2022 — atual', en: '2022 — present' },
-    description: {
-      pt: 'Desenvolvimento e manutenção de aplicações PHP/Laravel, criação de integrações entre EspoCRM, WordPress e serviços externos, automação de deploy com Docker.',
-      en: 'Development and maintenance of PHP/Laravel applications, building integrations between EspoCRM, WordPress and external services, deploy automation with Docker.',
+    role: {
+      pt: 'Desenvolvedor Full-stack PHP & WordPress',
+      en: 'Full-Stack PHP & WordPress Developer',
     },
-  },
-  {
-    role: { pt: 'Desenvolvedor Full-stack', en: 'Full-stack Developer' },
-    company: 'Empresa anterior',
-    period: { pt: '2020 — 2022', en: '2020 — 2022' },
+    company: 'TOI',
+    period: { pt: 'Atual', en: 'Present' },
     description: {
-      pt: 'Construção de features em PHP e JavaScript/TypeScript, administração de servidores Linux e configuração de pipelines de CI/CD.',
-      en: 'Building features in PHP and JavaScript/TypeScript, Linux server administration and CI/CD pipeline setup.',
+      pt: 'Desenvolvimento full-stack com foco em PHP e WordPress, construindo integrações sob medida em PHP e conectando WordPress e EspoCRM a outros serviços.',
+      en: 'Full-stack development focused on PHP and WordPress, building custom PHP integrations and connecting WordPress and EspoCRM with external services.',
     },
+    highlights: [
+      {
+        pt: 'Desenvolvimento full-stack de soluções em PHP e WordPress',
+        en: 'Full-stack development of PHP and WordPress solutions',
+      },
+      {
+        pt: 'Criação de integrações personalizadas em PHP entre sistemas',
+        en: 'Custom PHP integrations bridging internal and external systems',
+      },
+      {
+        pt: 'Integração do WordPress e EspoCRM com APIs e serviços externos',
+        en: 'Integrating WordPress and EspoCRM with third-party APIs and services',
+      },
+    ],
+    stack: ['PHP', 'WordPress', 'EspoCRM', 'REST APIs', 'Webhooks'],
   },
 ]
 
